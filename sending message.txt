@@ -1,0 +1,27 @@
+To send message:
+
+import requests
+
+url = "https://api.msgsndr.com/conversations/messages"
+
+payload = "{\n  \"type\": \"SMS\",\n  \"contactId\": \"string\",\n  \"appointmentId\": \"string\",\n  \"attachments\": [\n    \"string\"\n  ],\n  \"emailFrom\": \"string\",\n  \"html\": \"string\",\n  \"message\": \"string\",\n  \"subject\": \"string\",\n  \"templateId\": \"string\"\n}"
+headers = {
+    'Content-Type': "application/json",
+    'Authorization': "Bearer bef025e1bfcd64aa85fe9f1e34040d01b036d8e1",
+    'Version': "2021-04-15"
+    }
+
+response = requests.request("POST", url, data=payload, headers=headers)
+
+print(response.text)
+
+response:
+
+{
+  "conversationId": "string",
+  "messageId": "string"
+}
+
+
+
+Get contacts:

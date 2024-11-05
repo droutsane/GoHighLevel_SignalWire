@@ -1,0 +1,12 @@
+{"type": "SMS", "message": [], "conversationId": [], "conversationProviderId": "62c3f7a2950e4eee06c23f6d"}
+
+
+import json
+import requests
+
+url = 'http://127.0.0.1:8000/hooks'
+
+data = {
+    'name':'test body'
+}
+r = requests.post(url, data=json.dumps(data), headers={'Content-Type': 'application/json'})

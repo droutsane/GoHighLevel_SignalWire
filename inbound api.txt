@@ -1,0 +1,20 @@
+import requests
+
+url = "https://api.msgsndr.com/conversations/messages/inbound"
+
+payload = "{\n  \"type\": \"SMS\",\n  \"attachments\": [\n    \"string\"\n  ],\n  \"message\": \"string\",\n  \"conversationId\": \"ve9EPM428h8vShlRW1KT\",\n  \"conversationProviderId\": \"61d6d1f9cdac7612faf80753\",\n  \"html\": \"string\",\n  \"subject\": \"string\",\n  \"emailFrom\": \"string\",\n  \"emailTo\": \"string\"\n}"
+headers = {
+    'Content-Type': "application/json",
+    'Authorization': "",
+    'Version': ""
+    }
+
+response = requests.request("POST", url, data=payload, headers=headers)
+
+print(response.text)
+
+https://9dae-223-238-105-104.in.ngrok.io
+
+33d3a80ce75800872c38cb0ad935cebc2e51ec69
+
+@csrf_exempt

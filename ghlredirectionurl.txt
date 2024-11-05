@@ -1,0 +1,25 @@
+https://marketplace.gohighlevel.com/oauth/chooselocation?
+response_type=code&
+redirect_uri=https://43d3-223-176-14-35.in.ngrok.io&
+client_id=62c14e86d046f22c0748c34a-l570592j&
+scope=conversations/message.readonly conversations/message.write contacts.readonly contacts.write locations.readonly users.readonly users.write
+
+
+
+def phonevalidation(pnum):
+
+    pattern = re.compile(r'\d{10,11}$')
+    filterednum = re.sub("[^0-9]", "", pnum)
+    matches = pattern.findall(filterednum)
+
+    for match in matches:
+        if len(match) == 11 and match[0] =="1":
+            match = "+"+match
+            return match
+        if len(match) == 10:
+            match = "+1"+match
+            return match
+    else:
+        return False '''
+
+

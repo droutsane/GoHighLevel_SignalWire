@@ -1,0 +1,25 @@
+client id:62c14e86d046f22c0748c34a-l570592j
+client secret:37368cae-7c09-4299-8afa-6aedc91f6a04
+conversation provider id: 62c3f7a2950e4eee06c23f6d
+newest auth token: 1ae82acd8e8126106fd7d853e49c8c8360e6b137
+website:https://43d3-223-176-14-35.in.ngrok.io/
+
+{
+  "access_token": "6cef28762a2bea11827e1c1e40cf211f59510504",
+  "token_type": "Bearer",
+  "expires_in": 86399,
+  "refresh_token": "4ef75e809b67b2c907cc0e8ec0af1c010cb01afc",
+  "scope": "conversations/message.readonly conversations/message.write contacts.readonly contacts.write locations.readonly users.readonly users.write",
+  "userType": "Location",
+  "locationId": "VGZndtOFHrO4NIELBQYo"
+}
+
+******************************************************************
+
+
+sigwire
+
+Token : PT890a46ac5e41c8e92ef56d94563d676598822af9718c71e4
+Project id : 780f27d8-d554-4a0f-ab8f-72656e970809
+space url : goforclose.signalwire.com
+
